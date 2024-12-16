@@ -15,9 +15,9 @@ In addition to the tags that **will not be printed** according to a specific cla
 You can use printElements by CDN, provided by the :mechanical_arm:[jsDeliver](https://www.jsdelivr.com/?docs=gh) service, below:
 
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/soullnz/printElements@latest/dist/printElements.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/soullnz/print-elements@latest/dist/printElements.min.css">
 
-<script src="https://cdn.jsdelivr.net/gh/soullnz/printElements@latest/dist/printElements.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/soullnz/print-elements@latest/dist/printElements.min.js" crossorigin="anonymous"></script>
 ```
 
 ### By Download
@@ -39,7 +39,7 @@ Then, in your script, you should call the function ``printElements(options)`` an
         <h1>Your Content!</h1>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/gh/soullnz/printElements@latest/dist/printElements.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/soullnz/print-elements@latest/dist/printElements.min.js" crossorigin="anonymous"></script>
     <script>
         const options = {
             "targets": [

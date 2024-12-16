@@ -1,5 +1,5 @@
 {
-  "name": "PrintElements",
+  "name": "print-elements",
   "version": "1.0.0",
   "description": "JS library to print content from a page as a document.",
   "repository": {
@@ -40,5 +40,8 @@
     "gulp-cli": "^2.3.0",
     "gulp-rename": "^2.0.0",
     "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.14.1"
   }
 }
