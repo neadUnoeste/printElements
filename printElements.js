@@ -1,4 +1,3 @@
-import "regenerator-runtime/runtime";
 async function printElements(options) {
   let outprint = document.createElement("div");
   outprint.setAttribute("class", "outprint");
