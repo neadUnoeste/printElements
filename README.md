@@ -22,7 +22,7 @@ You can use printElements by CDN, provided by the :mechanical_arm:[jsDeliver](ht
 
 ### By Download
 
-You can also download minified files from the [``dist/``](https://github.com/pedrorrd-sousa/printElements/tree/master/dist) folder and include them in your HTML with a link and script.
+You can also download minified files from the [``dist/``](https://github.com/neadUnoeste/printElements/tree/master/dist) folder and include them in your HTML with a link and script.
 
 #### :receipt: How to set up and use
 
@@ -32,14 +32,14 @@ Then, in your script, you should call the function ``printElements(options)`` an
 
 ```
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/soullnz/printElements@latest/dist/printElements.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/neadUnoeste/printElements@latest/dist/printElements.min.css">
 <head>
 <body>
     <main>
         <h1>Your Content!</h1>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/gh/soullnz/print-elements@latest/dist/printElements.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/neadUnoeste/print-elements@latest/dist/printElements.min.js" crossorigin="anonymous"></script>
     <script>
         const options = {
             "targets": [
