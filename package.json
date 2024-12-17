@@ -1,5 +1,5 @@
 {
-  "name": "print-elements",
+  "name": "print-element",
   "version": "1.0.4",
   "description": "JS library to print content from a page as a document.",
   "repository": {
