@@ -18,8 +18,10 @@
 // }
 
 const gulp = require("gulp");
+const { parallel } = require("gulp");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify-es").default;
+const sourcemaps = require("gulp-sourcemaps");
 const rename = require("gulp-rename");
 
 // Tarefa para processar o arquivo printElements.js
@@ -37,10 +39,23 @@ gulp.task("build-js", () => {
     .pipe(gulp.dest("dist/")); // Salva o arquivo na pasta dist
 });
 
-// Observa mudanças no arquivo printElements.js
+// // Observa mudanças no arquivo printElements.js
 gulp.task("watch", () => {
   gulp.watch("printElements.js", gulp.series("build-js"));
 });
 
-// Tarefa padrão do Gulp
+// // Tarefa padrão do Gulp
 gulp.task("default", gulp.series("build-js", "watch"));
+
+gulp.task("minifyJS", () => {
+    return gulp
+      .src("*.js")
+      .pipe(sourcemaps.init())
+      .pipe(babel({ presets: ["@babel/env"] }))
+      .pipe(uglify())
+      .pipe(sourcemaps.write("."))
+      .pipe(rename("printElements.min.js"))
+      .pipe(gulp.dest("dist/"));
+});
+
+gulp.task("build", parallel("minifyJS"));

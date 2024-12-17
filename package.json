@@ -23,7 +23,8 @@
   "license": "MIT",
   "main": "printElements",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "build": "gulp build"
   },
   "keywords": [
     "js",
@@ -40,7 +41,10 @@
     "gulp-babel": "^8.0.0",
     "gulp-cli": "^3.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-uglify-es": "^2.0.0"
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.5"
   },
   "dependencies": {
     "@babel/runtime": "^7.26.0",
