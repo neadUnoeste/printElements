@@ -15,9 +15,9 @@ In addition to the tags that **will not be printed** according to a specific cla
 You can use printElements by CDN, provided by the :mechanical_arm:[jsDeliver](https://www.jsdelivr.com/?docs=gh) service, below:
 
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/soullnz/print-elements@latest/dist/printElements.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/neadUnoeste/print-elements@latest/dist/printElements.min.css">
 
-<script src="https://cdn.jsdelivr.net/gh/soullnz/print-elements@latest/dist/printElements.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/neadUnoeste/print-elements@latest/dist/printElements.min.js" crossorigin="anonymous"></script>
 ```
 
 ### By Download
