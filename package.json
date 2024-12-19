@@ -1,6 +1,6 @@
 {
   "name": "print-elements",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "JS library to print content from a page as a document.",
   "repository": {
     "type": "git",
