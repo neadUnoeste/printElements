@@ -70,6 +70,8 @@ In this object you should declare a few things:
  - **Targets** - The relative paths to the pages to be included in the print function.
  - **Tags** - An array of the tags to be printed (Ex: ``h1``, ``h2``, ``h3``, ``p``, ``li``, **etc**.).
  - **willNotPrint** - A class selector that will exclude elements in the function (Ex: ``.not-print``).
+ - **baseImg** - Defines the base path for image URLs (Ex: ``/assets/``), ensuring that images are correctly referenced from the specified directory.
+ - **excludeUrl** - A list of URL segments to remove from the current URL, allowing for flexible URL manipulation based on specific conditions.
 
 #### Contributing
 
