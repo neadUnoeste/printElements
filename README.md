@@ -56,8 +56,8 @@ Then, in your script, you should call the function `printElements(options)` and 
                 "span"
             ],
             "willNotPrint": "not-print",
-            baseImg: "/assets/",
-            excludeUrl: ["page02", "page03"],
+            "baseImg": "/assets/",
+            "excludeUrl": ["page02", "page03"],
         };
 
         document.querySelector("#myBtn").addEventListener("click", () => {
