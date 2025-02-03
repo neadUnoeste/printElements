@@ -22,13 +22,13 @@ You can use printElements by CDN, provided by the :mechanical_arm:[jsDeliver](ht
 
 ### By Download
 
-You can also download minified files from the [``dist/``](https://github.com/neadUnoeste/printElements/tree/master/dist) folder and include them in your HTML with a link and script.
+You can also download minified files from the [`dist/`](https://github.com/neadUnoeste/printElements/tree/master/dist) folder and include them in your HTML with a link and script.
 
 #### :receipt: How to set up and use
 
-To use it, the content to be printed needs to be encapsulated in the first ``<main>`` tag.
+To use it, the content to be printed needs to be encapsulated in the first `<main>` tag.
 
-Then, in your script, you should call the function ``printElements(options)`` and pass an object as a parameter, with the options that suit your project.
+Then, in your script, you should call the function `printElements(options)` and pass an object as a parameter, with the options that suit your project.
 
 ```
 <head>
@@ -55,7 +55,9 @@ Then, in your script, you should call the function ``printElements(options)`` an
                 "li",
                 "span"
             ],
-            "willNotPrint": "not-print"
+            "willNotPrint": "not-print",
+            baseImg: "/assets/",
+            excludeUrl: ["page02", "page03"],
         };
 
         document.querySelector("#myBtn").addEventListener("click", () => {
@@ -67,11 +69,11 @@ Then, in your script, you should call the function ``printElements(options)`` an
 
 In this object you should declare a few things:
 
- - **Targets** - The relative paths to the pages to be included in the print function.
- - **Tags** - An array of the tags to be printed (Ex: ``h1``, ``h2``, ``h3``, ``p``, ``li``, **etc**.).
- - **willNotPrint** - A class selector that will exclude elements in the function (Ex: ``.not-print``).
- - **baseImg** - Defines the base path for image URLs (Ex: ``/assets/``), ensuring that images are correctly referenced from the specified directory.
- - **excludeUrl** - A list of URL segments to remove from the current URL, allowing for flexible URL manipulation based on specific conditions.
+- **Targets** - The relative paths to the pages to be included in the print function.
+- **Tags** - An array of the tags to be printed (Ex: `h1`, `h2`, `h3`, `p`, `li`, **etc**.).
+- **willNotPrint** - A class selector that will exclude elements in the function (Ex: `.not-print`).
+- **baseImg** - Defines the base path for image URLs (Ex: `/assets/`), ensuring that images are correctly referenced from the specified directory.
+- **excludeUrl** - A list of URL segments to remove from the current URL, allowing for flexible URL manipulation based on specific conditions.
 
 #### Contributing
 
