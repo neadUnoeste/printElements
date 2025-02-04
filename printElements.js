@@ -6,7 +6,7 @@ async function printElements(options) {
   const targets = options.targets;
   const tags = options.tags.toString();
   const willNotPrint = options.willNotPrint.replace(".", "");
-  const baseImg = options.baseImg || "";
+  const baseImg = options.baseImg || "/assets/";
   const excludeUrl = options.excludeUrl || [""]; 
   let promises = [];
   let html = [];
