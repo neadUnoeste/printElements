@@ -11,18 +11,11 @@ async function printElements(options) {
   let promises = [];
   let html = [];
 
-  targets.forEach((target) => {
-    promises.push(
-      fetch(target)
-        .then((response) => {
-          return response.text();
-        })
-        .then((string) => {
-          // Fetches the text and parses to HTML
-          html.push(new DOMParser().parseFromString(string, "text/html"));
-        })
-    );
-  });
+   for (const target of targets) {
+    const response = await fetch(target);
+    const string = await response.text();
+    html.push(new DOMParser().parseFromString(string, "text/html"));
+  }
 
   const getBaseUrl = () => {
     let url = window.location.href;
